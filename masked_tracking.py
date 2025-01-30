@@ -42,12 +42,12 @@ frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 
 # Ensure output directory exists
-output_dir = "output"
+output_dir = r"C:\Drive E\me\Python_for_ML\Infosys\Infosys_SpringBoard\Streamlit"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Full output path
-output_path = os.path.join(output_dir, "masked_video.avi")
+output_path = os.path.join(output_dir, r"C:\Drive E\me\Python_for_ML\Infosys\Infosys_SpringBoard\Streamlit\masked_video.avi")
 
 # Initialize video writer with the correct path
 output_video = cv2.VideoWriter(
